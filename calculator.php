@@ -63,3 +63,4 @@ var mod = val1 % val2;
 
 
 </script>
+<h3>Finally calculated developed</h3>
