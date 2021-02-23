@@ -10,50 +10,6 @@
 <br>
 
 
-<?php
-//SELECT name as EmployeeName, SUM(salary) as TotalSalary from employee as e INNER JOIN employeesalary as s on e.id = s.empid GROUP by name
-
-/* An exception is an object that describes an error or unexpected behaviour of a PHP script.
-
-Exceptions are thrown by many PHP functions and classes.
-
-User defined functions and classes can also throw exceptions.
-
-Exceptions are a good way to stop a function when it comes across data that it cannot use. */
-
-
-/* The throw statement allows a user defined function or method to throw an exception. When an exception is thrown, the code following it will not be executed.
-
-If an exception is not caught, a fatal error will occur with an "Uncaught Exception" message. */
-
-function divide($dividend, $divisor)
-{
-	if($divisor == 0){
-		throw new Exception("Division by 0");
-	}
-	return $dividend/$divisor;
-}
-
-/* To avoid the error from the example above, we can use the try...catch statement to catch exceptions and continue the 
-process. */
-
-try {
-	
-	echo divide(5,0);
-}
-catch(Exception $e) {
-	echo "Enable to divide";
-}
-
-
-/* The try...catch...finally statement can be used to catch exceptions. Code in the finally block will always run 
-regardless of whether an exception was caught. If finally is present, the catch block is optional. */
-
-finally {
-  echo "Process complete.";
-}
-?>
-
 
 
 <script>
